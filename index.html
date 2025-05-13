@@ -5,56 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Tools Hub</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
-    header { background: #333; color: #fff; padding: 1rem 2rem; text-align: center; }
-    nav a { margin: 0 15px; color: #fff; text-decoration: none; }
-    .container { padding: 2rem; }
-    .tool { background: #fff; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 1rem; background: #333; color: #fff; margin-top: 2rem; }
-    a.button { background: #007BFF; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px; }
-    a.button:hover { background: #0056b3; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; padding: 0; }
+    header { background: #1f2937; color: white; padding: 1.5rem 2rem; text-align: center; }
+    nav a { margin: 0 10px; color: #d1d5db; text-decoration: none; font-weight: 500; }
+    nav a:hover { color: #fff; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 2rem; }
+    .tool { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .tool h2 { margin-top: 0; color: #111827; }
+    .tool p { color: #4b5563; }
+    a.button {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 0.5rem;
+    }
+    a.button:hover { background: #2563eb; }
+    footer { text-align: center; padding: 1rem; background: #1f2937; color: #d1d5db; margin-top: 2rem; }
   </style>
 </head>
 <body>
   <header>
     <h1>AI Tools Hub</h1>
     <nav>
-      <a href="#text">AI Text</a>
-      <a href="#image">AI Image</a>
-      <a href="#file">PDF Tools</a>
-      <a href="#summary">Paraphrasing</a>
+      <a href="#text">Text</a>
+      <a href="#image">Image</a>
+      <a href="#file">PDF</a>
+      <a href="#extra">More Tools</a>
     </nav>
   </header>
 
   <div class="container">
     <section id="text" class="tool">
       <h2>AI Text Generator</h2>
-      <p>Generate creative stories, emails, or articles.</p>
+      <p>Generate creative content like emails, stories, and more.</p>
       <a class="button" href="https://huggingface.co/spaces/yuntian-deng/ChatGPT" target="_blank">Try Now</a>
     </section>
 
     <section id="image" class="tool">
       <h2>AI Art Generator</h2>
-      <p>Create art using AI. Great for fun or content creation.</p>
+      <p>Create AI-powered images and artwork easily.</p>
       <a class="button" href="https://www.craiyon.com/" target="_blank">Try Now</a>
     </section>
 
     <section id="file" class="tool">
       <h2>PDF Tools</h2>
-      <p>Convert, compress, and split PDF files easily.</p>
+      <p>Compress, convert, and manage your PDF files.</p>
       <a class="button" href="https://pdfcandy.com/" target="_blank">Try Now</a>
     </section>
 
-    <section id="summary" class="tool">
+    <section class="tool">
       <h2>Summarizer & Paraphraser</h2>
-      <p>Summarize long texts or rewrite them in new words.</p>
+      <p>Summarize or rewrite texts using AI-based tools.</p>
       <a class="button" href="https://smmry.com/" target="_blank">Summarizer</a>
       <a class="button" href="https://quillbot.com/" target="_blank">Paraphraser</a>
+    </section>
+
+    <section id="extra" class="tool">
+      <h2>Word Counter</h2>
+      <p>Check word and character counts instantly.</p>
+      <a class="button" href="https://wordcounter.net/" target="_blank">Try Now</a>
+    </section>
+
+    <section class="tool">
+      <h2>QR Code Generator</h2>
+      <p>Create custom QR codes from text or URLs.</p>
+      <a class="button" href="https://www.qr-code-generator.com/" target="_blank">Try Now</a>
+    </section>
+
+    <section class="tool">
+      <h2>Image Compressor</h2>
+      <p>Reduce image file size without losing quality.</p>
+      <a class="button" href="https://imagecompressor.com/" target="_blank">Try Now</a>
+    </section>
+
+    <section class="tool">
+      <h2>Unit Converter</h2>
+      <p>Convert between different units like length, weight, and temperature.</p>
+      <a class="button" href="https://www.unitconverters.net/" target="_blank">Try Now</a>
+    </section>
+
+    <section class="tool">
+      <h2>Resume Generator</h2>
+      <p>Build a professional resume with AI help.</p>
+      <a class="button" href="https://zety.com/resume-builder" target="_blank">Try Now</a>
     </section>
   </div>
 
   <footer>
-    <p>&copy; 2025 AI Tools Hub. Built with free tools.</p>
+    <p>&copy; 2025 AI Tools Hub. Built using free resources. Share and bookmark!</p>
   </footer>
 </body>
 </html>
+
